@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica 6</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">	
+</head>
+<body>
+	<div class="container" align="center">
+		<table class="table table-striped" style="width:auto">
+			<tr> <th colspan="2"> <p>Números primos</p></th></tr>
+			<script> 
+				var x=prompt("Escribe un número igual o mayor a 1"); //pedimos un numero
+				var y=1;
+				while (x<=0 && y<3) {
+					x=prompt("¡CUIDADO! el número tiene que ser del 1 al 9"); //nos aseguramos de que este entre 1 y 9					
+					y++;
+				} 
+				if (x>=10 || x<=0) {
+					document.write ("<h1> ¡Fin del Juego! </h1>") //si nos equivocamos 3 veces, se acaba el juego
+				}
+				if (x<10 && x>0) {
+					for (y=1; y<=10; y++) {
+					 	document.write ("<tr> <td>"+x+" x "+y+" =</td> <td>"+(x*y)+"</td></tr>");
+					}	//formamos la tabla con el numero introducido
+				}
+			</script>
+		</table>
+	</div>
+</body>
