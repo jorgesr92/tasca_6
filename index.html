@@ -19,8 +19,7 @@
 				if (x>=10 || x<=0) {
 					document.write ("<h1> ¡Fin del Juego! </h1>") //si nos equivocamos 3 veces, se acaba el juego
 				}
-				if (x<10 && x>0) {
-					for (y=1; y<=10; y++) {
+				if (x>0) {
 					 	document.write ("<tr> <td>"+x+" x "+y+" =</td> <td>"+(x*y)+"</td></tr>");
 					}	//formamos la tabla con el numero introducido
 				}
