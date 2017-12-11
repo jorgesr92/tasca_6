@@ -1,6 +1,6 @@
 function esprimo(numero) {
-    for (var i=2; i<numero; i++) {
-        if (numero%i==0) {
+    for (var z=2; z<numero; z++) {
+        if (numero%z==0) {
             return false;
         }
     }
