@@ -1,5 +1,8 @@
-for (var i=2; i<x; i++) {
-    while (x%i==0) {
-        document.write ("<tr> <td>"+(i)+"</td></tr>");
+function esprimo(numero) {
+    for (var i=2; i<numero; i++) {
+        if (numero%i==0) {
+            return false;
+        }
     }
-}	
+    return true;
+}
